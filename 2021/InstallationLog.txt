@@ -1,0 +1,101 @@
+************************************* Invoked: Tue Sep 3 16:13:52 2024
+[0] Arguments: ./gnat-2021-20210519-x86_64-linux-bin
+[0] Operations sanity check succeeded.
+[108] Loaded control script ":/metadata/installer-config/configscript_qs.qs"
+[108] Using control script: ":/metadata/installer-config/configscript_qs.qs"
+[27920] Tmp and install directories are on the same volume. Volume mount point: "/" Free space available: "37.17 GiB"
+[27920] Installation space required: "1.49 GiB" Temporary space required: "256.00 MiB" Local repository size: "0.00 bytes"
+[29294] Control script callback "PerformInstallationPageCallback" does not exist.
+[29325] perform  operation: Mkdir
+[29325] 	- arguments: /opt/GNAT
+[29326] Done
+[29326] backup  operation: Mkdir
+[29326] 	- arguments: /opt/GNAT/2021
+[29326] Done
+[29326] perform  operation: Mkdir
+[29326] 	- arguments: /opt/GNAT/2021
+[29326] Done
+[29326] Install size: 2 components
+[29366] backup com.adacore operation: License
+[29366] 	- arguments:
+[29366] Done
+[29366] perform com.adacore operation: License
+[29366] 	- arguments:
+[29367] Done
+[29367] backup com.adacore.gnat operation: Extract
+[29367] 	- arguments: installer://com.adacore.gnat/2021bin.7z, /opt/GNAT/2021
+[29367] Done
+[29367] perform com.adacore.gnat operation: Extract
+[29367] 	- arguments: installer://com.adacore.gnat/2021bin.7z, /opt/GNAT/2021
+[34017] Done
+[34018] backup com.adacore.gnat operation: Extract
+[34018] 	- arguments: installer://com.adacore.gnat/2021content.7z, /opt/GNAT/2021
+[34018] Done
+[34018] perform com.adacore.gnat operation: Extract
+[34018] 	- arguments: installer://com.adacore.gnat/2021content.7z, /opt/GNAT/2021
+[34020] Done
+[34020] backup com.adacore.gnat operation: Extract
+[34020] 	- arguments: installer://com.adacore.gnat/2021include.7z, /opt/GNAT/2021
+[34020] Done
+[34020] perform com.adacore.gnat operation: Extract
+[34020] 	- arguments: installer://com.adacore.gnat/2021include.7z, /opt/GNAT/2021
+[34682] Done
+[34683] backup com.adacore.gnat operation: Extract
+[34683] 	- arguments: installer://com.adacore.gnat/2021lib.7z, /opt/GNAT/2021
+[34683] Done
+[34683] perform com.adacore.gnat operation: Extract
+[34683] 	- arguments: installer://com.adacore.gnat/2021lib.7z, /opt/GNAT/2021
+[38800] Done
+[38800] backup com.adacore.gnat operation: Extract
+[38800] 	- arguments: installer://com.adacore.gnat/2021lib64.7z, /opt/GNAT/2021
+[38800] Done
+[38800] perform com.adacore.gnat operation: Extract
+[38800] 	- arguments: installer://com.adacore.gnat/2021lib64.7z, /opt/GNAT/2021
+[41122] Done
+[41123] backup com.adacore.gnat operation: Extract
+[41123] 	- arguments: installer://com.adacore.gnat/2021libexec.7z, /opt/GNAT/2021
+[41123] Done
+[41123] perform com.adacore.gnat operation: Extract
+[41123] 	- arguments: installer://com.adacore.gnat/2021libexec.7z, /opt/GNAT/2021
+[44410] Done
+[44410] backup com.adacore.gnat operation: Extract
+[44410] 	- arguments: installer://com.adacore.gnat/2021share.7z, /opt/GNAT/2021
+[44410] Done
+[44410] perform com.adacore.gnat operation: Extract
+[44410] 	- arguments: installer://com.adacore.gnat/2021share.7z, /opt/GNAT/2021
+[52103] Done
+[52117] backup com.adacore.gnat operation: Extract
+[52117] 	- arguments: installer://com.adacore.gnat/2021x86_64-pc-linux-gnu.7z, /opt/GNAT/2021
+[52117] Done
+[52117] perform com.adacore.gnat operation: Extract
+[52117] 	- arguments: installer://com.adacore.gnat/2021x86_64-pc-linux-gnu.7z, /opt/GNAT/2021
+[52216] Done
+[52216] backup com.adacore.gnat operation: Execute
+[52216] 	- arguments: make, -C, /opt/GNAT/2021, post-install, prefix="/opt/GNAT/2021", UNDOEXECUTE
+[52216] Done
+[52216] perform com.adacore.gnat operation: Execute
+[52217] 	- arguments: make, -C, /opt/GNAT/2021, post-install, prefix="/opt/GNAT/2021", UNDOEXECUTE
+[52218] make" started, arguments: "-C /opt/GNAT/2021 post-install prefix=\"/opt/GNAT/2021\"
+[52222] make: Entering directory '/opt/GNAT/2021'\n\"\"/opt/GNAT/2021\"/libexec/gcc/x86_64-pc-linux-gnu/10.3.1/install-tools/mkheaders\" -v -v \"\"/opt/GNAT/2021\"\"\n
+[52245] Fixing headers into /opt/GNAT/2021/lib/gcc/x86_64-pc-linux-gnu/10.3.1/include-fixed for x86_64-pc-linux-gnu target\n
+[52249] Forbidden identifiers: linux unix \n
+[52253] Finding directories and links to directories\n
+[52254]  Searching /usr/include/.\n
+[52273]  Searching /usr/include/./c++/4.8.5\n
+[52796] Making symbolic directory links\n
+[52815] Fixing directory /usr/include into /opt/GNAT/2021/lib/gcc/x86_64-pc-linux-gnu/10.3.1/include-fixed\n
+[54036] Cleaning up unneeded directories:\n
+[54236] fixincludes is done\n
+[54241] case `uname` in \\\n   *_NT*) (cd \"\"/opt/GNAT/2021\"/lib/gcc/x86_64-pc-linux-gnu/10.3.1\"/adalib;chmod a-w *.ali) ;; \\\nesac\n
+[54244] cat \"\"/opt/GNAT/2021\"/share/examples/gnat\"/header.xml >  \"\"/opt/GNAT/2021\"/share/examples/gnat\"/gnat-examples.xml\n
+[54247] for d in full_project/full.xml options/options.xml other_languages/cpp_main/cpp_main.xml other_languages/cpp_pragmas/cpp_pragmas.xml other_languages/import_from_c/import_from_c.xml plugins/plugins.xml stream_io/stream_io.xml simple_project/simple_project.xml starter/starter.xml xml_stream/xml_stream.xml containers/anagram/anagram.xml containers/genealogy/genealogy.xml containers/hash/hash.xml containers/library/library.xml containers/shapes/shapes.xml containers/spellcheck/spellcheck.xml containers/wordcount/wordcount.xml containers/wordfreq/wordfreq.xml oo_interfaces/oo_interfaces.xml oo_airline/oo_airline.xml altivec/altivec.xml; do cat \"\"/opt/GNAT/2021\"/share/examples/gnat/$d\" >> \"\"/opt/GNAT/2021\"/share/examples/gnat\"/gnat-examples.xml; done\n
+[54270] cat \"\"/opt/GNAT/2021\"/share/examples/gnat\"/footer.xml >> \"\"/opt/GNAT/2021\"/share/examples/gnat\"/gnat-examples.xml\n
+[54273] sed \"s:PREFIX:\"/opt/GNAT/2021\":\" \"\"/opt/GNAT/2021\"/share/examples/gnat\"/gnat-examples.xml > \\\n\t\"\"/opt/GNAT/2021\"/share/examples/gnat\"/gnat-examples.xml.tmp && \\\nmv \"\"/opt/GNAT/2021\"/share/examples/gnat\"/gnat-examples.xml.tmp \"\"/opt/GNAT/2021\"/share/examples/gnat\"/gnat-examples.xml\n
+[54278] if [ ! -d \"\"/opt/GNAT/2021\"/share/gps/plug-ins\" ]; then \\\n\tmkdir -p \"\"/opt/GNAT/2021\"/share/gps/plug-ins\";    \\\nfi\n
+[54279] cp \"\"/opt/GNAT/2021\"/share/examples/gnat\"/gnat-examples.xml \"\"/opt/GNAT/2021\"/share/gps/plug-ins\"\n
+[54282] rm -f \"\"/opt/GNAT/2021\"\"/doinstall \"\"/opt/GNAT/2021\"\"/README\n
+[54284] make: Leaving directory '/opt/GNAT/2021'\n
+[54284] Done
+[54426] Writing maintenance tool: "/opt/GNAT/2021/maintenancetool.new"
+[54485] Wrote permissions for maintenance tool.
+[55066] Maintenance tool restart: false.
